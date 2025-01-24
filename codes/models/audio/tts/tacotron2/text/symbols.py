@@ -7,9 +7,9 @@ The default is a set of ASCII characters that works well for English or text tha
 from models.audio.tts.tacotron2.text import cmudict
 
 _pad        = '_'
-_punctuation = '!\'(),.:;? '
+_punctuation = " !\"#$%&'()*+,-./:;<=>?@[]^_{}|~"
 _special = '-'
-_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz آ أ ا ب پ ت ٹ ث ج چ ح خ د ڈ ذ ر ڑ ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ں و ؤ ہ ۂ ۃ ھ ء ی ئ ے ۓ'
+_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890èéàòüçï'
 
 # Prepend "@" to ARPAbet symbols to ensure uniqueness (some are the same as uppercase letters):
 _arpabet = ['@' + s for s in cmudict.valid_symbols]
